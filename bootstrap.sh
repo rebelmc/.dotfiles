@@ -1,5 +1,5 @@
 #!/bin/bash
-#!/bin/bash
+
 # bootstrap.sh installs things and does some general setup to get us ready to go.
 
 # Change directory to the parent directory of the bootstrap script.
@@ -191,8 +191,8 @@ setup_vim_ide() {
 setup_tools() {
   # Install tools
   info "Installing packages..."
-  declare -a packages=("curl" "wget" "vim" "build-essential" "yamllint"
-                       "cmake" "unzip" "zsh" "fontconfig"
+  declare -a packages=("curl" "wget" "vim" "yamllint"
+                        "unzip" "zsh" "fontconfig"
                       )
 
   for package in "${packages[@]}"
@@ -267,7 +267,7 @@ setup_tools
 #setup_gitconfig
 #setup_vim
 setup_zsh
-#install_dotfiles
+install_dotfiles
 #setup_vim_ide
 #setup_aws_cli
 
