@@ -19,7 +19,6 @@ The installation is basically cloning all files in a local folder named ".dotfil
 
 ```sh
 git clone https://github.com/rebelmc/.dotfiles.git ~/.dotfiles
-chmod +x ~/.dotfiles/bootstrap.sh
 ~/.dotfiles/bootstrap.sh
 ```
 
