@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# My Favorite Alias Definitions
+lsAlias=$(echo "$(which ls)" --color=auto)
+alias ls=$lsAlias
+alias la='ls -A --color=auto'
+alias ll='ls -alFh --color=auto'
+alias l='ls -CF --color=auto'
+alias lx='ls -lXB --color=auto'
+
+#alias bashrc='vi ~/.bashrc'
+alias zshrc='nano ~/.zshrc'
+#alias localbashrc='vi ~/.local_bashrc'
+#alias vimrc='vi ~/.vimrc'
+#alias tconf='vi ~/.tmux.conf'
+alias bootstrap='vi ~/.dotfiles/bootstrap.sh'
+
+alias c=clear
+alias vi='vim'
+alias greph='history | grep'
+#alias grepr='grep -r'
+#alias diff='diff -u'
+#alias gits='git status'
+#alias gitb='git branch --verbose'
+#alias gitr='git remote --verbose'
+alias gp='git pull'
+
+#num_procs=$(grep -c processor < /proc/cpuinfo)
+#alias make="make -j$num_procs"
+#alias mc='make clean'
+#alias mcm='make clean && make'
+#alias mcmr='make clean && make && make run'
+
+#alias python='python3.9'
+#alias pip='python -m pip'
+alias update='sudo apt update -y && sudo apt upgrade -y'
+
+#alias activate='source ./.venv/bin/activate'
+#alias reactivate='deactivate && source ./.venv/bin/activate'
