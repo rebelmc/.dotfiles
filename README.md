@@ -18,7 +18,8 @@ bootstrap.sh script will use to symlink dotfiles you wish to track in your home 
 The installation is basically cloning all files in a local folder named ".dotfiles" in your home directory and then running the bootstrap script.
 
 ```sh
-git clone https://github.com/rebelmc/.dotfiles.git ~/
+git clone https://github.com/rebelmc/.dotfiles.git ~/.dotfiles
+chmod +x ~/.dotfiles/bootstrap.sh
 ~/.dotfiles/bootstrap.sh
 ```
 

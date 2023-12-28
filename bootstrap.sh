@@ -192,8 +192,7 @@ setup_tools() {
   # Install tools
   info "Installing packages..."
   declare -a packages=("curl" "wget" "vim" "build-essential" "yamllint"
-                       "cmake" "unzip" "zsh" "fontconfig" "python3-dev" "x11-xkb-utils"
-                       "python3-pip"
+                       "cmake" "unzip" "zsh" "fontconfig"
                       )
 
   for package in "${packages[@]}"
@@ -263,7 +262,7 @@ setup_aws_cli() {
 }
 
 success 'Installation Started'
-#setup_tools
+setup_tools
 #install_rust
 #setup_gitconfig
 #setup_vim
