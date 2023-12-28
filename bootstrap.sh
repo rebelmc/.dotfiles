@@ -266,13 +266,14 @@ setup_tools
 #install_rust
 #setup_gitconfig
 #setup_vim
-#setup_zsh
+setup_zsh
 #install_dotfiles
 #setup_vim_ide
 #setup_aws_cli
 
 echo ''
 echo '  All installed!'
+
 # Start zsh
 sudo chsh -s $(which zsh)
 echo "Setup complete - Restart terminal to refresh settings."
