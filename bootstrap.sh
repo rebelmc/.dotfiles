@@ -202,7 +202,7 @@ setup_vim_ide() {
 setup_tools() {
   # Install tools
   info "Installing packages..."
-  declare -a packages=("curl" "wget" "vim" "yamllint"
+  declare -a packages=("curl" "wget" "vim" "yamllint" "neofetch"
                         "unzip" "zsh" "fontconfig"
                       )
 
@@ -274,9 +274,9 @@ setup_aws_cli() {
 
 success 'Installation Started'
 setup_tools
-install_rust
+#install_rust
 #setup_gitconfig
-setup_neovim
+#setup_neovim
 #setup_vim
 setup_zsh
 install_dotfiles
