@@ -161,6 +161,17 @@ setup_vim () {
   success 'Vim customization complete'
 }
 
+setup_neovim () {
+  info 'Customizing Neovim'
+
+  sudo apt remove neovim -y
+  sudo add-apt-repository ppa:neovim-ppa/stable
+  sudo apt-get update
+  sudo apt install -y neovim
+
+  success 'Vim customization complete'
+}
+
 setup_vim_ide() {
     info "Setting up completion engines..."
 
@@ -263,8 +274,9 @@ setup_aws_cli() {
 
 success 'Installation Started'
 setup_tools
-#install_rust
+install_rust
 #setup_gitconfig
+setup_neovim
 #setup_vim
 setup_zsh
 install_dotfiles
