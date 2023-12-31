@@ -25,7 +25,7 @@ git clone https://github.com/rebelmc/.dotfiles.git ~/.config/dotfiles
 and, even better - you can do it in one line (if you trust me 😎)
 
 ```sh
-https://curth.de/nice-console | bash
+wget https://curth.de/nice-console | bash
 ```
 
 ## Explanation of Folders
